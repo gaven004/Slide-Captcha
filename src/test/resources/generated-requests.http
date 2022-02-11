@@ -1,0 +1,18 @@
+###
+POST http://localhost:8080/crack
+Content-Type: application/json
+
+{
+  "background": "https://p19-captcha-sg.ibyteimg.com/tos-alisg-i-ovu2ybn2i4-sg/88c30f87f6e54f5991bd9131f694d05f~tplv-ovu2ybn2i4-2.jpeg",
+  "puzzle": "https://p19-captcha-sg.ibyteimg.com/tos-alisg-i-ovu2ybn2i4-sg/7edbaa9b2489441cbba3e58429e80f6c~tplv-ovu2ybn2i4-1.png"
+}
+
+###
+POST http://localhost:8080/crack
+Content-Type: application/json
+
+{
+  "background": "https://p19-captcha-sg.ibyteimg.com/tos-alisg-i-ovu2ybn2i4-sg/7d99f0397372459eb8c1dd4e8ddf9c54~tplv-ovu2ybn2i4-2.jpeg",
+  "puzzle": "https://p19-captcha-sg.ibyteimg.com/tos-alisg-i-ovu2ybn2i4-sg/dcaa8fa6931345979f8b5726a3e79490~tplv-ovu2ybn2i4-1.png"
+}
+
