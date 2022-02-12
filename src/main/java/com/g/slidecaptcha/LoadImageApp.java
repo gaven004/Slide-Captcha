@@ -33,14 +33,8 @@ public class LoadImageApp extends Component {
 
     public LoadImageApp() {
         try {
-            imgBackground = ImageIO.read(new File("/Users/gaven/Downloads/tk_img/7d99f0397372459eb8c1dd4e8ddf9c54_tplv-ovu2ybn2i4-2.jpeg"));
-            imgPuzzle = ImageIO.read(new File("/Users/gaven/Downloads/tk_img/dcaa8fa6931345979f8b5726a3e79490_tplv-ovu2ybn2i4-1.png"));
-//            imgBackground = ImageIO.read(new File("/Users/gaven/Downloads/tk_img/88c30f87f6e54f5991bd9131f694d05f_tplv-ovu2ybn2i4-2.jpeg"));
-//            imgPuzzle = ImageIO.read(new File("/Users/gaven/Downloads/tk_img/7edbaa9b2489441cbba3e58429e80f6c_tplv-ovu2ybn2i4-1.png"));
-//            imgBackground = ImageIO.read(new File("/Users/gaven/Downloads/tk_img/98a5fd3e80d145b9bf211cdf74d31818_tplv-ovu2ybn2i4-2.jpeg"));
-//            imgPuzzle = ImageIO.read(new File("/Users/gaven/Downloads/tk_img/85f30fbab0c849a8a41e391821ae5ece_tplv-ovu2ybn2i4-1.png"));
-//            imgBackground = ImageIO.read(new File("/Users/gaven/Downloads/tk_img/52ba3acfcc804f30be790e7a8fcef571_tplv-ovu2ybn2i4-2.jpeg"));
-//            imgPuzzle = ImageIO.read(new File("/Users/gaven/Downloads/tk_img/94991b616cb34e5ca3e46f385f066645_tplv-ovu2ybn2i4-1.png"));
+            imgBackground = ImageIO.read(new File("./src/test/resources/img/b4.jpeg"));
+            imgPuzzle = ImageIO.read(new File("./src/test/resources/img/p4.png"));
 //            imgMask = new BufferedImage(imgPuzzle.getWidth(), imgPuzzle.getHeight(), BufferedImage.TYPE_INT_ARGB);
 
             final long start = System.currentTimeMillis();
@@ -52,6 +46,7 @@ public class LoadImageApp extends Component {
             final long t2 = System.currentTimeMillis();
             System.out.println("find, t2 = " + (t2 - t1));
         } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
