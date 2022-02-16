@@ -37,6 +37,7 @@ public class CrackController {
         BufferedImage imgPuzzle;
 
         try {
+            log.debug("Load image");
             imgBackground = ImageIO.read(new URL(request.getBackground()));
             imgPuzzle = ImageIO.read(new URL(request.getPuzzle()));
 
@@ -54,6 +55,8 @@ public class CrackController {
     }
 
     static List<Point> extract(BufferedImage imgPuzzle) {
+        log.debug("Extract outline");
+
         List<Point> listMask = new ArrayList<>();
 
         int width = imgPuzzle.getWidth();
@@ -108,6 +111,8 @@ public class CrackController {
     }
 
     static Point find(BufferedImage imgBackground, BufferedImage imgPuzzle, List<Point> listMask) {
+        log.debug("Find puzzle");
+
         final int gWidth = imgBackground.getWidth();
         final int gHeight = imgBackground.getHeight();
 
